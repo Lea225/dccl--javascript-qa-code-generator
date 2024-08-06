@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>devchallenges | QR Code Generator</title>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+    <section class="first-section" id="first-section">
+        <img src="images/logo-qr-generator.svg" alt="logo-qr-generator">
+        <div class="input-div">
+            <input type="url" id="url-input" placeholder="Enter an url">
+            <button class="generate-btn" id="generate-btn">QR code</button>
+        </div>
+    </section>
+    <section class="result-container" id="result-container" style="display: none;">
+        <header>
+            <img src="images/logo-qr-generator.svg" alt="logo-qr-generator">
+        </header>
+        <main>
+            <div class="qr-code-container" id="qr-code-container"></div>
+            <div class="actions" id="actions" style="display: none;">
+                <button id="download-btn">Download <img src="images/dowload-icon.svg" alt="dowload-icon"></button>
+                <button id="share-btn">Share <img src="images/link-share.svg" alt="link"></button>
+            </div>
+        </main>
+    </section>
+</body>
+</html>

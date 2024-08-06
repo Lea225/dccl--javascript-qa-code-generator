@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap');
+
+:root {
+    /* Couleurs principales */
+    --white: #F2F5F9;
+    --light-blue: #3662E3;
+    --dark-blue: #111729;
+    --grayish-blue: #364153;
+    --pale-blue: #4e80ee33;
+  
+    /* Typographie */
+    --font-family: 'Outfit', sans-serif;
+    --font-size: 1rem;
+}
+
+* {
+    font-family: var(--font-family);
+}
+
+body {
+    font-size: var(--font-size);
+    background-color: #111729;
+    background-repeat: no-repeat;
+    background-position: right 4.5rem;
+    background-image: url('images/bg-illustration.svg');
+}
+
+header {
+    padding: 2rem;
+}
+
+.first-section {
+    width: 60%;
+    margin: 15rem auto;
+    text-align: center;
+}
+
+section img {
+    margin-bottom: 2rem;
+}
+
+.input-div {
+    width: 100%;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid var(--light-blue);
+    background-color: hsla(225, 20%, 9%, 0.6);
+}
+
+button { 
+    gap: 10px;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 10px; 
+    color: var(--white);
+    text-align: center;
+    align-items: center;
+    background-color: var(--light-blue);
+}
+
+.actions {  
+    gap: 30px;
+    width: 30%;
+    display: flex;
+    margin: 5rem auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.actions button{
+    padding: 1rem 3rem;
+}
+
+button img {
+    height: 3vh;
+    margin: 0 auto;
+}
+
+.generate-btn {
+    position: absolute;
+    top: 50%;
+    right: -37px;
+    transform: translateY(-50%);
+}
+
+.qr-code-container {
+    width: 300px;
+    height: 300px;
+    padding: 2rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pale-blue);
+}
